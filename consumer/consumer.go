@@ -28,14 +28,15 @@ func (c *KafkaConsumer) Consume(topics []string, signals chan os.Signal) {
 	}
 	logrus.Infof("Kafka is consuming....")
 
-ConsumerLoop:
+	// ConsumerLoop:
 	for {
 		select {
 		case msg := <-chanMessage:
 			logrus.Infof("New Message from kafka, message: %v", string(msg.Value))
 		case sig := <-signals:
 			if sig == os.Interrupt {
-				break ConsumerLoop
+				break
+				// break ConsumerLoop
 			}
 		}
 	}
