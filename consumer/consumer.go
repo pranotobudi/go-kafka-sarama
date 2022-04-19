@@ -1,5 +1,7 @@
 package consumer
 
+// reference: https://medium.com/easyread/implementasi-kafka-menggunakan-golang-testing-db183e0b3c29
+
 import (
 	"os"
 

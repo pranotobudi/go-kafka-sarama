@@ -1,5 +1,7 @@
 package producer
 
+// reference: https://medium.com/easyread/implementasi-kafka-menggunakan-golang-testing-db183e0b3c29
+
 import (
 	"github.com/Shopify/sarama"
 	"github.com/sirupsen/logrus"
